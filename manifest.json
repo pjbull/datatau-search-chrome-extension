@@ -1,20 +1,17 @@
 {
-    "name": "My awesome extension :)",
+    "name": "Datatau Search",
+    "author": "Peter Bull",
     "version": "0.1",
     "icons": { 
-        "16": "/img/icons/icon_16.png",
-        "48": "/img/icons/icon_48.png",
-        "128": "/img/icons/icon_128.png" 
+        "16": "/img/icons/dt.png",
+        "48": "/img/icons/dt.png"
     },
 
-    "description": "Yay, I'm so useless.",
-    "permissions": [
-        "geolocation"
-    ],
+    "description": "Add search to datatau",
 
     "content_scripts": [
         {
-            "matches": ["<all_urls>"],
+            "matches": ["http://www.datatau.com/*"],
             "js": [
                     "/js/external/jquery.js", 
                     "/js/content_script.js"
